@@ -1,6 +1,6 @@
 <template>
   <section class="src-components-formulario">
-    <div class="jumbotron">
+    <div class="jumbotron formu">
     <vue-form :state="formState" @submit.prevent="enviar()">
       <validate tag="div">
         <label for="nombre">Nombre</label>
@@ -98,6 +98,7 @@
       </button>
     </vue-form>
 
+<div class="jumbotron tabla">
     <table v-show="this.alumnos.length > 0" class="table table-dark">
       <thead>
         <tr>
@@ -132,6 +133,7 @@
     <div v-show="this.alumnos.length == 0">
       <h3>NO HAY ALUMNOS PARA MOSTRAR</h3>
     </div>
+</div>
     </div>
   </section>
 </template>
@@ -205,7 +207,12 @@ export default {
 .src-components-formulario {
 }
 
-.jumbotron{
-  background-color: antiquewhite;
+.formu{
+  background-color: beige;
 }
+
+.tabla{
+background-color: darkgoldenrod;
+}
+
 </style>

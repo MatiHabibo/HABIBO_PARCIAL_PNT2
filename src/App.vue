@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <h1 :style="{color: 'white', background: 'grey'}">PARCIAL HABIBO, MATIAS - 21F, PNT2</h1>
     <NavBar />
     <router-view></router-view>
   </div>
